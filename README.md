@@ -1,6 +1,8 @@
 # Muezzin-BitBar
 This is a BitBar plugin for showing Islamic prayer times in your menu bar. It uses [MuezzinAPI](https://github.com/mehmetakiftutuncu/MuezzinAPI) to get its data.
 
+<img alt="screenshot" src="https://github.com/mehmetakiftutuncu/Muezzin-BitBar/raw/master/Screenshot.png" />
+
 ## Dependencies
 You will need [BitBar](https://getbitbar.com/) running in your system.
 
