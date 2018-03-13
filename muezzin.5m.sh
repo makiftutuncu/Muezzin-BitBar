@@ -4,7 +4,7 @@
 # <bitbar.version>v1.0</bitbar.version>
 # <bitbar.author>Mehmet Akif Tütüncü</bitbar.author>
 # <bitbar.author.github>mehmetakiftutuncu</bitbar.author.github>
-# <bitbar.image></bitbar.image>
+# <bitbar.image>https://github.com/mehmetakiftutuncu/Muezzin-BitBar/raw/master/Screenshot.png</bitbar.image>
 # <bitbar.desc>This is a BitBar plugin for showing Islamic prayer times in your menu bar.</bitbar.desc>
 # <bitbar.dependencies>shell,httpie,jq</bitbar.dependencies>
 #
