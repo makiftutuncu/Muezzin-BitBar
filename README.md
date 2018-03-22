@@ -1,12 +1,10 @@
 # Muezzin-BitBar
-This is a BitBar plugin for showing Islamic prayer times in your menu bar. It uses [MuezzinAPI](https://github.com/mehmetakiftutuncu/MuezzinAPI) to get its data.
+This is a command line script and a BitBar plugin for showing Islamic prayer times in your menu bar. It uses [MuezzinAPI](https://github.com/mehmetakiftutuncu/MuezzinAPI) to get its data.
 
 <img alt="screenshot" src="https://github.com/mehmetakiftutuncu/Muezzin-BitBar/raw/master/Screenshot.png" />
 
 ## Dependencies
-You will need [BitBar](https://getbitbar.com/) running in your system.
-
-This plugin also requires following to run
+This script requires following to run
 - httpie - https://httpie.org/
 - jq - https://stedolan.github.io/jq/
 
@@ -16,11 +14,14 @@ You can install them with Homebrew using
 brew install httpie jq
 ```
 
-## Installation
+## Installation for Bitbar
 Download [muezzin.5m.sh](https://github.com/mehmetakiftutuncu/Muezzin-BitBar/raw/master/muezzin.5m.sh), put it into your BitBar plugin directory and make it executable.
 
-## Configuration
+## Configuration for BitBar
 See [MuezzinAPI's country, city and district documentation](https://github.com/mehmetakiftutuncu/MuezzinAPI) to get ids for your desired location. Then open `muezzin.5m.sh` in your favorite text editor to edit `COUNTRY_ID`, `CITY_ID` and `DISTRICT_ID` values. By default, they are set to `Istanbul, Turkey` location.
+
+## Running the Script on Its Own
+The script can also run without BitBar, as a CLI tool. Just run `muezzin.sh`. It requires `--country`, `--city` and `--district` parameters.
 
 ## Contributing
 Feel free to file issues and pull requests.
