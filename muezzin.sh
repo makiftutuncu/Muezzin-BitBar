@@ -24,8 +24,8 @@ function run() {
 
     http --ignore-stdin $url | jq -r -c ".prayerTimes.\"$today\" | to_entries[] | [.key, .value] | @tsv" > $DATA_FILE
 
-    nextPrayerTimeName=$(awk '$2>"'$now'" {print toupper(substr($1,1,1))tolower(substr($1,2))}' $DATA_FILE | head -n 1)
-    nextPrayerTime=$(awk '$2>"'$now'" {print $2}' $DATA_FILE | head -n 1)
+    nextPrayerTimeName=$(awk '$2>"'"$now"'" {print toupper(substr($1,1,1))tolower(substr($1,2))}' $DATA_FILE | head -n 1)
+    nextPrayerTime=$(awk '$2>"'"$now"'" {print $2}' $DATA_FILE | head -n 1)
 
     echo "🕌 $nextPrayerTimeName ⏰ $nextPrayerTime"
     echo "---"
